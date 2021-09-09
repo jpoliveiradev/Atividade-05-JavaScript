@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 05 Questão 03</title>
+        <link rel="stylesheet" href="style5.css">
+    </head>
+    <body>
+        <div class="taxa">
+            <form name="taxaNeM" action="" method="post">
+                <fieldset>
+                    <legend><b>Taxa de Natalidade/Mortalidade</b></legend><br>
+                    <fieldset>
+                        Infome qual cidade/estado: <input type="text" id="fm_city" placeholder="Digite aqui"> <br><br>
+                        Infome a quantidade de crianças nascidas: <input type="text" id="fm_nCriancasNasc" placeholder="Digite aqui"> <br><br>
+                        Infome o número de óbitos: <input type="text" id="fm_nObitos" placeholder="Digite aqui"> <br><br>
+                        Infome o número de habitantes: <input type="text" id="fm_nHabitantes" placeholder="Digite aqui"> <br><br>
+                        <input type="button" name="bt_entrar" id="botao" value="Confirmar" onclick="calcularTaxa()"/>
+                        <input type="reset" name="bt_cancelar"  id="botao" value="Cancelar"/>   
+                    </fieldset><br>
+                </fieldset>                
+            </form>
+        </div>
+        <script type="text/javascript" src="./js05_Questao3.js"></script>
+    </body>
+</html>
