@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="style5.css">
 </head>
 <body>
-    <div class="banco">
-        <form name="Formlogin" action=" " method="post">
-            <fieldset>
-                <h1>Banco Palmas</h1>
-                <fieldset>
-                    <legend>Atendimento</legend>
-                    Informe seu nome: <br><input type="text" name="fm_nome" placeholder="Digite seu nome aqui"> 
-                    <p></p>
-                    Informe sua senha: <br><input type="password" id="fm_senha" name="js_senha" placeholder="Digite sua senha de 4 dígitos">
-                    <p></p>
-                    <input type="button" class="botao" name="bt_entrar" value="Entrar" onclick="senha()"/>
-                    <input type="reset" class="botao" name="bt_cancelar" value="Cancelar"/>
-                </fieldset>
-                </form>
-            </fieldset>
-    </div>
+    <section class="container">
+            <div class="banco">
+            <form name="Formlogin" action=" " method="post">
+                    <h1>Banco Palmas</h1>
+                    <fieldset>
+                        <legend>Atendimento</legend>
+                        <p>Informe seu nome: <input type="text" name="fm_nome" placeholder="Digite seu nome aqui"> 
+                        </p>
+                        <p>Informe sua senha: <input type="password" id="fm_senha" name="js_senha"  placeholder="senha de 4 dígitos">
+                        </p>
+                        <input type="button" class="botao" name="bt_entrar" value="Entrar" onclick="senha()"/>
+                        <input type="reset" class="botao" name="bt_cancelar" value="Cancelar"/>
+                    </fieldset>
+                    </form>
+            </div>
+    </section>
+    
     <script type="text/javascript" src="./js05_Questao4.js"></script>
 </body>
 </html>
