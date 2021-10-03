@@ -9,18 +9,33 @@
     </head>
     <body>
         <div class="taxa">
-            <form name="taxaNeM" action="" method="post">
+            <form name="formTaxa" action="">
                 <fieldset>
-                    <legend><b>Taxa de Natalidade/Mortalidade</b></legend><br>
-                    <fieldset>
-                        Infome qual cidade/estado: <input type="text" id="fm_city" placeholder="Digite aqui"> <br><br>
-                        Infome a quantidade de crianças nascidas: <input type="text" id="fm_nCriancasNasc" placeholder="Digite aqui"> <br><br>
-                        Infome o número de óbitos: <input type="text" id="fm_nObitos" placeholder="Digite aqui"> <br><br>
-                        Infome o número de habitantes: <input type="text" id="fm_nHabitantes" placeholder="Digite aqui"> <br><br>
-                        <input type="button" name="bt_entrar" id="botao" value="Confirmar" onclick="calcularTaxa()"/>
-                        <input type="reset" name="bt_cancelar"  id="botao" value="Cancelar"/>   
-                    </fieldset><br>
-                </fieldset>                
+                    <legend><b> Taxa de Natalidade/Mortalidade</b></legend>
+                    <br>
+                    <div class="inputTaxa">
+                        <input type="text" name="lugar" id="lugar" class="inputUser" required>
+                        <label for="lugar" class="labelInput">Infome qual cidade/estado</label>
+                    </div>
+                    <br><br>
+                    <div class="inputTaxa">
+                        <input type="text" name="criNascidas" id="criNascidas" class="inputUser" required>
+                        <label for="criNascidas" class="labelInput">Infome a quantidade de crianças nascida</label>
+                    </div>
+                    <br><br>
+                    <div class="inputTaxa">
+                        <input type="text" name="obitos" id="obitos" class="inputUser" required>
+                        <label for="obitos" class="labelInput">Infome o número de óbitos</label>
+                    </div>
+                    <br><br>
+                    <div class="inputTaxa">
+                        <input type="text" name="habitantes" id="habitantes" class="inputUser" required>
+                        <label for="habitantes" class="labelInput">Infome o número de habitantes</label>
+                    </div>
+                    <br>
+                    <input type="button" name="bt_entrar" id="botao" value="Confirmar" onclick="calcularTaxa()"/>
+                    <input type="reset" name="bt_cancelar"  id="botao" value="Cancelar"/><br>
+                </fieldset>
             </form>
         </div>
         <script type="text/javascript" src="./js05_Questao3.js"></script>
